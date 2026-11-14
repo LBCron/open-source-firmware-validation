@@ -243,7 +243,7 @@ CPT008.201 CPU temperature after stress test (USB-PD) (Ubuntu)
     [Documentation]    This test aims to verify whether the temperature of the
     ...    CPU cores is not higher than the maximum allowed
     ...    temperature during stress test.
-    VAR    ${concurrent_test_id}=    CPT007.201
+    VAR    ${concurrent_test_id}=    CPT008.201
     Skip If Concurrent Test Not Supported    ${concurrent_test_id}
     ${temps}=    Get Concurrent Test Outputs    ${concurrent_test_id}
     Check CPU Temps    ${temps}
